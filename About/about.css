@@ -1,0 +1,119 @@
+#aboutHeaderContainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.aboutHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 192, 103);
+    line-height: 30px;
+    width: 45vw;
+    min-width: fit-content;
+    height: auto;
+    padding: 5px;
+    border: solid 4px white;
+    box-shadow: 30px 30px black;
+}
+
+.aboutHeader h1{
+    font-family:'Koulen', cursive;
+    font-size: 62px;
+    line-height: 48px;
+    text-shadow: 2px 2px rgb(0 255 187);
+    box-shadow: 10px  white;
+}
+
+#aboutX{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family:'Koulen', cursive;
+    font-size: 80px;
+    line-height: 70px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: dotted black 2px;
+    outline: 5px dotted rgb(255, 149, 167);
+    background-color: rgb(0 255 187);
+    padding: 22px;
+    background-image: url(../images/pinkSugarSkull.png);
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutMenu{
+    font-family: 'Inter', sans-serif;
+    list-style-type:disc;
+    font-size: 20px;
+}
+
+.aboutMenu li:nth-of-type(2){
+    list-style-type: none;
+}
+
+#dotDivider{
+    width: 250px;
+    border-top: 20px dotted black;
+}
+
+.aboutPContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 30px;
+}
+
+.aboutPContainer p{
+    font-family: "granville", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 21px;
+    margin: 5px;
+}
+
+a:-webkit-any-link{
+    color: Black;
+}
+
+
+
+
+/*idea for a line from sugar skull to first paragraph = shelved*/
+/* #aboutX::before{
+    content: "";
+    display: block;
+    width: 2px;
+    height: calc(100% - 100px);
+    border-left: 2px dashed black;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(50%);
+    
+
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 100%;
+    border-left: 1px dashed black;
+    rotate: 60deg;
+    z-index: -1;
+} */
+
+

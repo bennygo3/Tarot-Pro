@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+    margin: 0;
+    padding: 30px;
+    
+    
+}
+
+#artHeader{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* #artHeader h1{
+   
+    background-size: cover;
+} */
+
+#artNav{
+    background-image: url(../images/woodFrameNoBck.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 190px;
+    width: 268px;
+}
+
+
+.artMenu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    font-family: 'Codystar', cursive;
+    
+    font-family: 'Inter', sans-serif;
+    
+    width: 230px;
+    height: auto;
+    line-height: 1.5;
+    font-size: 19px;
+    
+}
+
+a:-webkit-any-link{
+    color: #00791e;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.artMenu li:nth-of-type(5){
+    list-style-type: none;
+}
+
+#gallery{
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 70vw;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    
+}
+  
+h1 {
+    
+    font-family: 'Codystar', cursive;
+    color: black;
+    text-shadow: #f2ff00 2px 2px;
+    font-size: 118px;
+    text-align: center;
+}
+
+  
+#artFrame {
+    background-image: url(../images/burroColor.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#blackFrame{
+    background-image: url(../images/nikChup.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 370px;
+    margin: 15px;
+}
+
+#goldFrame{
+    background-image: url(../images/electronicPCB.jpeg);
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center;
+    width: 300px;
+}
+
+/* #modalImage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+} */
+
+.art:hover{
+    scale: 1.1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#modalContainer{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 160px;
+    left: 0;
+    top: 0;
+    width: 87%;
+    height: 87%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+}
+
+#modalImage{
+    width: 100%;
+    height: auto;
+}
+
+#modalContent{
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 784px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    text-align: center;
+    color: #ccc;
+    padding: 10px;
+    height: 100px;
+    font-size: 20px;
+}
+
+#modalContent, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
+
+/* The close button */
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    #modalContent {
+      width: 100%;
+    }
+}

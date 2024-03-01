@@ -1,0 +1,117 @@
+/* #f27798 */
+#blogHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* outline: dotted 5px rgb(253, 87, 151); */
+    outline: double 3px rgb(0, 0, 0);
+    /* outline: dotted 6px #24d798; */
+    outline-offset: 2px;
+    background-color: #986f48;
+    background-color: #ffadc3;
+}
+
+#pentaWorker{
+    width: 190px;
+    height: auto;
+    padding: 16px;
+    
+}
+
+#papel{
+    height: auto;
+    width: 210px;
+    max-width: 420px;
+    min-width: 210px;
+    border-radius: 50%;
+    overflow-clip-margin: 15px;
+    /* border: dashed 5px rgb(242, 239, 62);*/
+    border: dashed 2px rgb(253, 87, 151);
+    outline:  dotted 4px rgb(255 219 219);
+    
+    /* border: dashed 1px black; */
+    border-spacing: 5px;
+    outline-offset: 5px;
+    padding: 10px;
+    /* background-color: #f0f0f0; */
+    
+}
+
+.blogMenu{
+    font-family: 'Miniver', cursive;
+    list-style-type: disc;
+    font-size: 30px;
+    margin-left: 0px;
+    line-height: 1.5;
+    padding: 10px;
+    width: 204px;
+    height: auto;
+}
+
+a:-webkit-any-link{
+    color:black;
+}
+
+
+.blogMenu li:hover{
+    text-shadow: 1px 1px rgb(246, 196, 204);
+} 
+
+
+section h2{
+    font-family: 'Almendra Display', cursive;
+    font-size: 75px;
+    text-align: center;
+    
+}
+
+#posterContainer img{
+    width: 125px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+#posterContainer img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0px 7px 12px grey;
+}
+
+#posterContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+#horoscope{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+/* #posterContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    align-items: flex-start;
+    width: 255px;
+    position: relative;
+    
+    
+} */
+
+#horoscope div{
+    font-family: 'Almendra Display', cursive;
+    font-size: 28px;
+}
+
+
+
+/* box-shadow: -10px 0px inset rgb(255, 153, 168); */
+
