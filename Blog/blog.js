@@ -76,17 +76,18 @@ const dateValue = document.createElement('span');
 dateText.appendChild(dateValue);
 
 function updateHoroscope(sign) {
-    const URL = `https://aztro.sameerkumar.website?sign=${sign}&day=today`;
+    const URL = `https://aztro.sameerkumar.website/?sign=${sign}&day=today`;
+    console.log(URL);
     fetch(URL, {
         method: 'POST'
     })
     .then(response => response.json())
-    .then(data => {
-        const current_date = data.current_date;
-        const description = data.description;
-        const compatibility = data.compatibility;
+    .then(json => {
+        const date = json.current_date;
+        const description = json.description;
+        const compatibility = json.compatibility;
         // dateText.innerText = current_date;
-        dateValue.innerText = data.current_date;
+        dateValue.innerText = json.current_date;
         horoscopeText.innerText = description;
         compatibilityText.innerText = compatibility;
         
@@ -95,7 +96,10 @@ function updateHoroscope(sign) {
 }
 
 
-
+// const URL = `https://aztro.sameerkumar.website?sign=${sign}&day=today`;
+// fetch(URL, {
+//     method: 'POST'
+// })
 // fetch('https://aztro.sameerkumar.website?sign=virgo&day=today', {
 //     method: 'POST',
 // })

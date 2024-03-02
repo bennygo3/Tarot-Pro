@@ -4,18 +4,21 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    border: 2px solid #ed5980;
+    padding: 6px;
+    border-spacing: 3px;
     /* outline: dotted 5px rgb(253, 87, 151); */
-    outline: double 3px rgb(0, 0, 0);
-    /* outline: dotted 6px #24d798; */
-    outline-offset: 2px;
+    /* outline:  3px rgb(0, 0, 0); */
+    outline: dotted 6px #000000;
+    /* outline-offset: 2px; */
     background-color: #986f48;
-    background-color: #ffadc3;
+    background-color: #24d798;
 }
 
 #pentaWorker{
-    width: 190px;
+    width: 170px;
     height: auto;
-    padding: 16px;
+    padding: 6px;
     
 }
 
@@ -86,12 +89,12 @@ section h2{
 #posterContainer{
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
+    width: 90%;
 }
 #horoscope{
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
+    width: 90%;
 }
 
 /* #posterContainer {
