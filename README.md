@@ -14,5 +14,19 @@ This project is a mock-up website designed as a potential replacement for a clie
 - CSS
 - JavaScript
 
+## Photos
+
+### Home page
+
+![Header of the homepage](images/headerHome.png)
+
+### About page
+
+![Heading of the about me page](images/aboutHeader.png)
+
+### Blog / Horoscope page
+
+![Heading of the horoscope page](images/horoscopeHeader.png)
+
 
 
