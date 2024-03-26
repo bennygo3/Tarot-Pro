@@ -22,7 +22,7 @@ This project is a mock-up website designed as a potential replacement for a clie
 
 ### About page
 
-![Heading of the about me page](images/aboutHeader.png)
+![Heading of the about me page](images/aboutMeHeader.png)
 
 ### Blog / Horoscope page
 
